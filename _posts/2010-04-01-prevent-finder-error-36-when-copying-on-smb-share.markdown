@@ -10,15 +10,6 @@ status: publish
 categories:
 - OS X
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2010/04/prevent-finder-error-36-when-copying-on-smb-share/"
 ---
 The error is caused by OS X trying to save metadata for copied files in resource forks (NT terminology) / named streams (Mac terminology). If the server (usually Samba) doesn't support this it can be disabled  

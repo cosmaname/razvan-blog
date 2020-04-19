@@ -10,14 +10,6 @@ status: publish
 categories:
 - Linux
 tags: []
-meta:
-  _edit_last: '1'
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2013/09/increase-kvm-guest-disk/"
 ---
 1. add DAG repo  

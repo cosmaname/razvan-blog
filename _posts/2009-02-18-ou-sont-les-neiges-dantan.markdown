@@ -9,15 +9,6 @@ password: ''
 status: publish
 categories: []
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2009/02/ou-sont-les-neiges-dantan/"
 ---
 Quote from some unknown person that struck a nerve at the time read

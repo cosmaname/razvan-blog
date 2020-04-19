@@ -10,15 +10,6 @@ status: publish
 categories:
 - Linux
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2008/06/ubuntu-on-an-acer-aspire-5315/"
 ---
 Apparently the wireless card on this model is very stubborn, quick HOWTO:  

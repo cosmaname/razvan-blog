@@ -9,13 +9,5 @@ password: ''
 status: publish
 categories: []
 tags: []
-meta:
-  _edit_last: '1'
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2016/08/manage-jenkins-job-from-gocd/"
 ---

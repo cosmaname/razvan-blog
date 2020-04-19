@@ -10,14 +10,6 @@ status: publish
 categories:
 - Linux
 tags: []
-meta:
-  _edit_last: '1'
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2015/04/throttle-local-e-mails-prevent-alert-floods/"
 ---
 `/etc/postfix/master.cf:

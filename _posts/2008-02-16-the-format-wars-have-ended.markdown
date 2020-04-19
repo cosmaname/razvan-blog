@@ -9,15 +9,6 @@ password: ''
 status: publish
 categories: []
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2008/02/the-format-wars-have-ended/"
 ---
 Unfortunately, Sony won. Warner Bros., Wal-Mart and Netflix have chosen Blu-Ray, and - [from an article in an American newspaper (Hollywood Reporter)](http://www.hollywoodreporter.com/hr/content_display/news/e3ib77125d96b22e86027d0bfb0c25aa58d):

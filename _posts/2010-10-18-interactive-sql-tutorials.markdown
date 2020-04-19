@@ -10,15 +10,6 @@ status: publish
 categories:
 - SQL
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2010/10/interactive-sql-tutorials/"
 ---
 Linking back to [http://sqlzoo.net](http://sqlzoo.net) - as a "thank you" for their service.

@@ -10,15 +10,6 @@ status: publish
 categories:
 - OS X
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2010/09/enabling-legacy-vnc-auth-on-the-mac/"
 ---
 1. You won't need this if you connect with Apple's client or with Jolly's FastVNC. Most other clients though (tightvnc) require an initial password instead of presenting OS X's login window.

@@ -10,15 +10,6 @@ status: publish
 categories:
 - SQL
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2009/05/how-to-delete-an-user-from-sql-db/"
 ---
 Specifically, a MS SQL 200/2005 db. Enterprise Manager and the equivalent Management Studio fail with no helpful details if said user owns any object in the database. To find out first if there are any schemas owned by the user:

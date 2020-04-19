@@ -9,15 +9,6 @@ password: ''
 status: publish
 categories: []
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2008/04/dvd-copying/"
 ---
 Yes, I duplicate my DVDs. All of them. Or at least I try to. I'm not talking about ISO images grabbed from the peer-to-peer repository du jour, but stuff I liked enough to buy. The round plastic disk distribution thingie has a very nasty side-effect: it fucks my laptop's reader. It won't happen immediately, but after a few dozen movies and just enough time beyond the one year warranty the unit starts mis-behaving - blocking the system, spinning like crazy, overheating etc. The main reasons for this behaviour are simple:  

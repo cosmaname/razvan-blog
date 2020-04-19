@@ -10,14 +10,6 @@ status: publish
 categories:
 - Windows
 tags: []
-meta:
-  _edit_last: '1'
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2015/04/reconf-service-using-only-cmd/"
 ---
 Fixing Zabbix on a bunch of Windows machines with local accounts  

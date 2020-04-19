@@ -11,15 +11,6 @@ categories:
 - SQL
 - Windows
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2009/09/close-all-connections-to-current-database/"
 ---
 Useful if the database refuses to go offline for backup/restore

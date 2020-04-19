@@ -11,15 +11,6 @@ categories:
 - PHP
 - Windows
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2010/04/install-php-as-fastcgi-on-xp/"
 ---
 1. Do not use the web platform installer. If you already have, uninstall PHP and FastCGI using the Control Panel  

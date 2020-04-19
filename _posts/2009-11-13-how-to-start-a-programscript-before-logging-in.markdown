@@ -10,14 +10,6 @@ status: publish
 categories:
 - Windows
 tags: []
-meta:
-  _edit_last: '1'
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2009/11/how-to-start-a-programscript-before-logging-in/"
 ---
 Option 1: srvany and instsrv from the [Windows Resource Kit](http://www.petri.co.il/download_windows_2003_reskit_tools.htm)  

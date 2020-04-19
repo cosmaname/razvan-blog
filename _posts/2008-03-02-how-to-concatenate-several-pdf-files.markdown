@@ -9,15 +9,6 @@ password: ''
 status: publish
 categories: []
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2008/03/how-to-concatenate-several-pdf-files/"
 ---
 Use [Ghostscript](http://pages.cs.wisc.edu/%7Eghost/). There is no Mac package, but a `./configure --without-x && make && sudo make install` will do. Ghostscript offers a wealth of functions to generate or manipulate existing PDFs, check [http://pages.cs.wisc.edu/~ghost/doc/cvs/Use.htm#Options](http://pages.cs.wisc.edu/%7Eghost/doc/cvs/Use.htm#Options) for details.  

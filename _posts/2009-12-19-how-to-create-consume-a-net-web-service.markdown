@@ -11,15 +11,6 @@ categories:
 - C#
 - PHP
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2009/12/how-to-create-consume-a-net-web-service/"
 ---
 `[WebService(Namespace = "http://server")]

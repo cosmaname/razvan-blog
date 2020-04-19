@@ -10,15 +10,6 @@ status: publish
 categories:
 - Perl
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2008/02/how-to-rename-a-bunch-of-files-according-to-some-complex-rule/"
 ---
 From Larry Wall himself:  

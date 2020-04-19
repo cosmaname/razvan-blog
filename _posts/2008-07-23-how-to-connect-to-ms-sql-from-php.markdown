@@ -11,15 +11,6 @@ categories:
 - PHP
 - SQL
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2008/07/how-to-connect-to-ms-sql-from-php/"
 ---
 1. Install [FreeTDS](http://freetds.org/). (./configure && make && make install)  

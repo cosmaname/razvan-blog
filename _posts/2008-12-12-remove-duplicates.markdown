@@ -10,15 +10,6 @@ status: publish
 categories:
 - SQL
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2008/12/remove-duplicates/"
 ---
 1. create another identical table (lazy way: right-click table, script table as, create to, new query editor window)  

@@ -10,15 +10,6 @@ status: publish
 categories:
 - Windows
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2009/12/how-to-fix-a-database-in-one-simple-step/"
 ---
 `DECLARE @db nvarchar(50)

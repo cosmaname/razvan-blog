@@ -10,14 +10,6 @@ status: publish
 categories:
 - Solaris
 tags: []
-meta:
-  _edit_last: '1'
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2012/10/solaris-what-process-is-listening-on-each-port/"
 ---
 Since Solaris doesn't have a 'netstat -tunlp', the below parses the output of ptree and pfiles to get a list:  

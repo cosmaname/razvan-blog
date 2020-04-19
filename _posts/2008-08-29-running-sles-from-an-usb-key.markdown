@@ -10,15 +10,6 @@ status: publish
 categories:
 - Linux
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2008/08/running-sles-from-an-usb-key/"
 ---
 This is a simple attempt to build an easily replaceable and cheap storage server. Cheap means a lot of SATA drives in RAID1 or 5 with both disks and controller expected to fail miserably at any time. Linux makes booting from a RAID array unnecessary difficult (even if it's in a mirror config, c'mon Windows got that right around NT4) so as a quick solution I used an old and slow ATA drive to boot who held the drivers and configuration for the 1TB array. Obviously, the drive died, and the system image backup was stored on the RAID disks so I:  

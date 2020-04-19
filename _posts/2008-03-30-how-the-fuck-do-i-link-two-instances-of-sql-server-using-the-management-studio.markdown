@@ -10,15 +10,6 @@ status: publish
 categories:
 - SQL
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2008/03/how-the-fuck-do-i-link-two-instances-of-sql-server-using-the-management-studio/"
 ---
 Never thought I'll actually miss Enterprise Manager, but the newer one is even more confusing. So - no clue so far how to do such a simple task via the graphical interface, just execute the stuff below:  

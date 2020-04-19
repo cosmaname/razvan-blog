@@ -10,15 +10,6 @@ status: publish
 categories:
 - Windows
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2008/02/cannot-uninstall-application/"
 ---
 Windows Installer is an unnecessarily complex tool, that checks weird things like domain policies or vendor digital signatures, when all you'd ask from it is to place a bloody shortcut on the desktop. It also tends to leave a lot of crap around when anything goes wrong. A few hints on how to fix it:  

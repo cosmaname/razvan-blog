@@ -11,15 +11,6 @@ categories:
 - SQL
 - Windows
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2010/01/grant-restricted-backup-and-restore-privileges/"
 ---
 Purpose: allow a specific user to backup and restore database, without giving her full access to the filesystem.  

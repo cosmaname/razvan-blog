@@ -10,14 +10,6 @@ status: publish
 categories:
 - C#
 tags: []
-meta:
-  _edit_last: '1'
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2014/07/count-pages-for-all-docs-in-a-folder/"
 ---
 ```

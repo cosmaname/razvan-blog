@@ -10,14 +10,6 @@ status: publish
 categories:
 - Windows
 tags: []
-meta:
-  _edit_last: '1'
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2014/07/telnet-in-powershell/"
 ---
 `If (New-Object System.Net.Sockets.TCPClient -ArgumentList '192.168.252.3',1688) {Write-Host 'YES'}`

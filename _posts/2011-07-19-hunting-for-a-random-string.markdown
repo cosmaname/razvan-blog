@@ -10,13 +10,5 @@ status: publish
 categories:
 - SQL
 tags: []
-meta:
-  _edit_last: '1'
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2011/07/hunting-for-a-random-string/"
 ---

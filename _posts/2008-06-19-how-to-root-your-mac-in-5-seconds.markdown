@@ -10,15 +10,6 @@ status: publish
 categories:
 - OS X
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2008/06/how-to-root-your-mac-in-5-seconds/"
 ---
 Maybe 10 if you're a slow typist. In short:  

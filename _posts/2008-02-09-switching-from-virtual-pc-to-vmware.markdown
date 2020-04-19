@@ -9,15 +9,6 @@ password: ''
 status: publish
 categories: []
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2008/02/switching-from-virtual-pc-to-vmware/"
 ---
 Doesn't work. Don't try it. Just back up the guest somehow and restore it in the new emulator.  

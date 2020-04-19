@@ -11,14 +11,6 @@ categories:
 - Linux
 - Windows
 tags: []
-meta:
-  _edit_last: '1'
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2015/04/saltstack-for-windows-updates/"
 ---
 Set up WSUS to automatically approve security patches (because it's the right thing to do),

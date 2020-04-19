@@ -10,15 +10,6 @@ status: publish
 categories:
 - Windows
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2010/09/cpu-throttling-on-an-acer-aspire-3000/"
 ---
 When running the default (retail) XP SP3 OS, this laptop runs at full CPU speed, and becomes worryingly hot in the process. Since [Acer's e\* Management](http://support.acer-euro.com/empowering_technology/utility.html) package doesn't seem to actually do anything, the solution so far is to:

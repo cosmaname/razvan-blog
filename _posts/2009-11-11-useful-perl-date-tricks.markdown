@@ -10,15 +10,6 @@ status: publish
 categories:
 - Perl
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2009/11/useful-perl-date-tricks/"
 ---
 `perl -MDate::Manip -e 'Date_Init("Language=Romanian","DateFormat=non-US"); print UnixDate(DateCalc("azi","+ 18 zile lucratoare"),"%A, %e %B %Y%n")'`

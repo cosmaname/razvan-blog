@@ -9,14 +9,6 @@ password: ''
 status: publish
 categories: []
 tags: []
-meta:
-  _edit_last: '1'
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2011/03/ipv6-packetdam/"
 ---
 [PacketDam](http://www.packetdam.com "packetdam.com") has reached an important milestone with the addition of IPv6 support. As native deployments are becoming the norm, it is only a matter of time before attacks switch to the new transport. [http://www.packetdam.com/features/](http://www.packetdam.com/features/ "PacketDam features")

@@ -9,15 +9,6 @@ password: ''
 status: publish
 categories: []
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2009/10/windows-7-through-slashdots-eyes/"
 ---
 [Brilliant motherfucker](http://tech.slashdot.org/comments.pl?sid=1414209&cid=29835259):)

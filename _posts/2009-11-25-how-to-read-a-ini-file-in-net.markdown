@@ -11,15 +11,6 @@ categories:
 - C#
 - Windows
 tags: []
-meta:
-  _edit_last: '1'
-  _wp_old_slug: ''
-author:
-  login: cosmar
-  email: rg@cosma.name
-  display_name: Razvan Cosma
-  first_name: Razvan
-  last_name: Cosma
 permalink: "/2009/11/how-to-read-a-ini-file-in-net/"
 ---
 There is no ready-made class, so you'll have to call the Windows API  
