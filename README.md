@@ -1,1 +1,1 @@
-# source for https://razvan.cosma.name/
+# Random code bits of random value
