@@ -35,6 +35,7 @@ $config = $wsus.GetConfiguration(); $config.TargetingMode = "Client"; $config.Sa
 <!--more-->  
 Configure clients via registry keys (assuming this cannot be pushed via Group Policy); should not require a reboot  
 `
+{% raw  %}
 init.sls:
 {% if grains['os'] == 'RedHat' %}
 include:
@@ -43,7 +44,7 @@ include:
 include:
     - updates.windows
 {% endif %}
-
+{% endraw %}
 windows.sls:
 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\WUServer':
     reg.present:
