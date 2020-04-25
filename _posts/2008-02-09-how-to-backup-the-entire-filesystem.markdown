@@ -16,5 +16,3 @@ permalink: "/2008/02/how-to-backup-the-entire-filesystem/"
 rsync -aAXHv --delete --numeric-ids --exclude={"lost+found","/proc/*","/sys/*","/tmp/*"} / bk@otherhost:/dir
 ```
 
-&nbsp;
-

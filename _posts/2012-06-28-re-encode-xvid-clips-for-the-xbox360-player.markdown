@@ -11,5 +11,5 @@ categories: []
 tags: []
 permalink: "/2012/06/re-encode-xvid-clips-for-the-xbox360-player/"
 ---
-# mencoder infile.avi -ovc lavc -oac copy -lavcopts vcodec=mpeg4:threads=2:autoaspect:turbo:mbd=2:trell=1 -ffourcc xvid -mc 0 -vf softskip,harddup -o outfile.avi
+` mencoder infile.avi -ovc lavc -oac copy -lavcopts vcodec=mpeg4:threads=2:autoaspect:turbo:mbd=2:trell=1 -ffourcc xvid -mc 0 -vf softskip,harddup -o outfile.avi`
 

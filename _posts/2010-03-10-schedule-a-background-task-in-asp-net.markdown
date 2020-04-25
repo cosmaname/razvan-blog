@@ -13,7 +13,8 @@ categories:
 tags: []
 permalink: "/2010/03/schedule-a-background-task-in-asp-net/"
 ---
-`private static CacheItemRemovedCallback OnCacheRemove = null;
+```
+private static CacheItemRemovedCallback OnCacheRemove = null;
 protected void Application_Start(object sender, EventArgs e)
 {
 AddTask("DoStuff", 60);
@@ -31,5 +32,4 @@ public void CacheItemRemoved(string k, object v, CacheItemRemovedReason r)
 // re-add our task so it recurs
 AddTask(k, Convert.ToInt32(v));
 }
-`
-
+```

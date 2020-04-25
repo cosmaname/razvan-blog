@@ -12,7 +12,8 @@ categories:
 tags: []
 permalink: "/2015/04/throttle-local-e-mails-prevent-alert-floods/"
 ---
-`/etc/postfix/master.cf:
+```
+/etc/postfix/master.cf:
 thrttl unix - - n - - smtp -o syslog_name=smtp-throttled
 /etc/postfix/main.cf:
 thrttl_destination_rate_delay = 10s
@@ -21,5 +22,6 @@ thrttl_destination_recipient_limit = 2
 thrttl_initial_destination_concurrency=1
 transport_maps = regexp:/etc/postfix/transport
 /etc/postfix/transport:
-/\@mydomain\.com$/ thrttl:`
+/\@mydomain\.com$/ thrttl:
+```
 

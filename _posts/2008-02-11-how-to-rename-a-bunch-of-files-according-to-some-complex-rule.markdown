@@ -13,7 +13,8 @@ tags: []
 permalink: "/2008/02/how-to-rename-a-bunch-of-files-according-to-some-complex-rule/"
 ---
 From Larry Wall himself:  
-`$op = shift or die "Usage: rename expr [files]\n";
+```
+$op = shift or die "Usage: rename expr [files]\n";
 chomp(@ARGV = <STDIN>) unless @ARGV;
 for ( @ARGV )
 {
@@ -21,5 +22,5 @@ $was = $_;
 eval $op;
 die $@ if $@;
 rename ( $was, $_ ) unless $was eq $_;
-}`
-
+}
+```

