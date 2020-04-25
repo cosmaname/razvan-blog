@@ -15,11 +15,11 @@ Thought I'd check just how old my account is
 
 ```
 #!/usr/bin/env python3
-from yahoo\_oauth import OAuth1 
-oauth = OAuth1(None, None, from\_file='yahoo\_credentials.json')
+from yahoo_oauth import OAuth1 
+oauth = OAuth1(None, None, from_file='yahoo_credentials.json')
 from myql import MYQL 
 yql = MYQL(format='xml', oauth=oauth) 
-response = yql.raw\_query('select \* from social.profile where guid=me') import xml.etree.ElementTree as ET 
+response = yql.raw_query('select * from social.profile where guid=me') import xml.etree.ElementTree as ET 
 r = ET.fromstring(response.content) 
 for a in r.iter('memberSince'): 
   print(a.tag, a.text)

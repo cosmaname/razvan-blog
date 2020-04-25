@@ -53,7 +53,7 @@ select @filename = @rootdir + @db + '_' + @now + '.bak'
 BACKUP DATABASE @db TO DISK = @filename WITH INIT
 go`
 
-if exists (select \* from dbo.sysobjects where id = object\_id(N'[dbo].[restoreng]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)  
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[restoreng]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)  
 drop procedure [dbo].[restoreng]  
 go  
 create procedure [dbo].[restoreng] ( @database sysname ) as  
@@ -66,7 +66,7 @@ select @db = replace(replace(replace(@database,':',''),'''',''),'\','')
 declare @now varchar(14)  
 declare @filename varchar(128)  
 select @filename = @rootdir + @db + '.bak'  
---EXEC sp\_dboption @db, 'single user', 'true'  
+--EXEC sp_dboption @db, 'single user', 'true'  
 --drop database @db  
 --restore DATABASE @db from disk = @filename  
 go

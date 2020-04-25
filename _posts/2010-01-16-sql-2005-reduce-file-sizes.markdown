@@ -14,7 +14,7 @@ permalink: "/2010/01/sql-2005-reduce-file-sizes/"
 ---
 use angajare  
 alter database angajare set recovery simple  
-backup log angajare with truncate\_only  
-dbcc shrinkfile (angajare\_log, 1)  
+backup log angajare with truncate_only  
+dbcc shrinkfile (angajare_log, 1)  
 dbcc shrinkfile (angajare, 1)
 

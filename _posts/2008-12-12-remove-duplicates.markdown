@@ -15,7 +15,7 @@ permalink: "/2008/12/remove-duplicates/"
 1. create another identical table (lazy way: right-click table, script table as, create to, new query editor window)  
 2. rename constraints  
 3. create unique index removeduplicates on newtab (uniqfield) with  
-IGNORE\_DUP\_KEY  
-4. insert \* from oldtab into newtab  
+IGNORE_DUP_KEY  
+4. insert * from oldtab into newtab  
 You'll get a warning "ignoring duplicate field" which is good.
 

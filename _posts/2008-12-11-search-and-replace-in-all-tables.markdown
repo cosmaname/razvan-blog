@@ -12,68 +12,69 @@ categories:
 tags: []
 permalink: "/2008/12/search-and-replace-in-all-tables/"
 ---
-<p><code>SET NOCOUNT ON<br />
-DECLARE @stringToFind NVARCHAR(100)<br />
-DECLARE @stringToReplace NVARCHAR(100)<br />
-DECLARE @schema sysname<br />
-DECLARE @table sysname<br />
-DECLARE @count INT<br />
-DECLARE @sqlCommand NVARCHAR(max)<br />
-DECLARE @where NVARCHAR(max)<br />
-DECLARE @columnName sysname<br />
-DECLARE @object_id INT<br />
-SET @stringToFind = 'Smith'<br />
-SET @stringToReplace = 'Jones'<br />
-DECLARE TAB_CURSOR CURSOR  FOR<br />
-SELECT   B.NAME      AS SCHEMANAME,<br />
-A.NAME      AS TABLENAME,<br />
-A.OBJECT_ID<br />
-FROM     sys.objects A<br />
-INNER JOIN sys.schemas B<br />
-ON A.SCHEMA_ID = B.SCHEMA_ID<br />
-WHERE    TYPE = 'U'<br />
-ORDER BY 1<br />
-OPEN TAB_CURSOR<br />
-FETCH NEXT FROM TAB_CURSOR<br />
-INTO @schema,<br />
-@table,<br />
-@object_id<br />
-WHILE @@FETCH_STATUS = 0<br />
-BEGIN<br />
-DECLARE COL_CURSOR CURSOR FOR<br />
-SELECT A.NAME<br />
-FROM   sys.columns A<br />
-INNER JOIN sys.types B<br />
-ON A.SYSTEM_TYPE_ID = B.SYSTEM_TYPE_ID<br />
-WHERE  OBJECT_ID = @object_id<br />
-AND IS_COMPUTED = 0<br />
-AND B.NAME IN ('char','nchar','nvarchar','varchar','text','ntext')<br />
-OPEN COL_CURSOR<br />
-FETCH NEXT FROM COL_CURSOR<br />
-INTO @columnName<br />
-WHILE @@FETCH_STATUS = 0<br />
-BEGIN<br />
-SET @sqlCommand = 'UPDATE ' + @schema + '.' + @table + ' SET [' +  @columnName + '] = REPLACE(convert(nvarchar(max),[' + @columnName +  ']),''' + @stringToFind + ''',''' + @stringToReplace + ''')'<br />
-SET @where = ' WHERE [' + @columnName + '] LIKE ''%' + @stringToFind + '%'''<br />
-EXEC( @sqlCommand + @where)<br />
-SET @count = @@ROWCOUNT<br />
-IF @count &gt; 0<br />
-BEGIN<br />
-PRINT @sqlCommand + @where<br />
-PRINT 'Updated: ' + CONVERT(VARCHAR(10),@count)<br />
+```
+SET NOCOUNT ON
+DECLARE @stringToFind NVARCHAR(100)
+DECLARE @stringToReplace NVARCHAR(100)
+DECLARE @schema sysname
+DECLARE @table sysname
+DECLARE @count INT
+DECLARE @sqlCommand NVARCHAR(max)
+DECLARE @where NVARCHAR(max)
+DECLARE @columnName sysname
+DECLARE @object_id INT
+SET @stringToFind = 'Smith'
+SET @stringToReplace = 'Jones'
+DECLARE TAB_CURSOR CURSOR  FOR
+SELECT   B.NAME      AS SCHEMANAME,
+A.NAME      AS TABLENAME,
+A.OBJECT_ID
+FROM     sys.objects A
+INNER JOIN sys.schemas B
+ON A.SCHEMA_ID = B.SCHEMA_ID
+WHERE    TYPE = 'U'
+ORDER BY 1
+OPEN TAB_CURSOR
+FETCH NEXT FROM TAB_CURSOR
+INTO @schema,
+@table,
+@object_id
+WHILE @@FETCH_STATUS = 0
+BEGIN
+DECLARE COL_CURSOR CURSOR FOR
+SELECT A.NAME
+FROM   sys.columns A
+INNER JOIN sys.types B
+ON A.SYSTEM_TYPE_ID = B.SYSTEM_TYPE_ID
+WHERE  OBJECT_ID = @object_id
+AND IS_COMPUTED = 0
+AND B.NAME IN ('char','nchar','nvarchar','varchar','text','ntext')
+OPEN COL_CURSOR
+FETCH NEXT FROM COL_CURSOR
+INTO @columnName
+WHILE @@FETCH_STATUS = 0
+BEGIN
+SET @sqlCommand = 'UPDATE ' + @schema + '.' + @table + ' SET [' +  @columnName + '] = REPLACE(convert(nvarchar(max),[' + @columnName +  ']),''' + @stringToFind + ''',''' + @stringToReplace + ''')'
+SET @where = ' WHERE [' + @columnName + '] LIKE ''%' + @stringToFind + '%'''
+EXEC( @sqlCommand + @where)
+SET @count = @@ROWCOUNT
+IF @count &gt; 0
+BEGIN
+PRINT @sqlCommand + @where
+PRINT 'Updated: ' + CONVERT(VARCHAR(10),@count)
 PRINT '----------------------------------------------------
 '  
 END  
-FETCH NEXT FROM COL\_CURSOR  
+FETCH NEXT FROM COL_CURSOR  
 INTO @columnName  
 END  
-CLOSE COL\_CURSOR  
-DEALLOCATE COL\_CURSOR  
-FETCH NEXT FROM TAB\_CURSOR  
+CLOSE COL_CURSOR  
+DEALLOCATE COL_CURSOR  
+FETCH NEXT FROM TAB_CURSOR  
 INTO @schema,  
 @table,  
-@object\_id  
+@object_id  
 END  
-CLOSE TAB\_CURSOR  
-DEALLOCATE TAB\_CURSOR
-
+CLOSE TAB_CURSOR  
+DEALLOCATE TAB_CURSOR
+```

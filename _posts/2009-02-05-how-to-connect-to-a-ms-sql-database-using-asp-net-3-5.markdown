@@ -20,7 +20,7 @@ In web.config:
 </connectionStrings>
 ...
 </configuration>`  
-In App\_Code:  
+In App_Code:  
 `using System.Data.SqlClient;
 namespace whatever
 {

@@ -12,7 +12,7 @@ categories:
 tags: []
 permalink: "/2010/09/cpu-throttling-on-an-acer-aspire-3000/"
 ---
-When running the default (retail) XP SP3 OS, this laptop runs at full CPU speed, and becomes worryingly hot in the process. Since [Acer's e\* Management](http://support.acer-euro.com/empowering_technology/utility.html) package doesn't seem to actually do anything, the solution so far is to:
+When running the default (retail) XP SP3 OS, this laptop runs at full CPU speed, and becomes worryingly hot in the process. Since [Acer's e* Management](http://support.acer-euro.com/empowering_technology/utility.html) package doesn't seem to actually do anything, the solution so far is to:
 
 1. [Download RMClock](http://cpu.rightmark.org/products/rmclock.shtml "RMClock Utility")
 2. Keep only two profiles, 4.0@0.975V and 8.0@1.175V

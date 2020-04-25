@@ -15,9 +15,9 @@ permalink: "/2008/06/ubuntu-on-an-acer-aspire-5315/"
 Apparently the wireless card on this model is very stubborn, quick HOWTO:  
 #-1 madwifi doesn't work, be it stable version or svn commit up to 3745  
 #0 upgrade to the latest packages (kernel 2.6.24-19, ndiswrapper 1.50)  
-#1 rmmod ath\_pci, ath\_rate\_sample, ath\_hal, wlan, everything until you're sure there there are no wireless modules loaded  
+#1 rmmod ath_pci, ath_rate_sample, ath_hal, wlan, everything until you're sure there there are no wireless modules loaded  
 #2 mcedit /etc/default/linux-restricted-modules-common  
-DISABLED\_MODULES="ath\_hal"  
+DISABLED_MODULES="ath_hal"  
 #3 apt-get install ndiswrapper-common  
 #4 unpack [this driver](../atheros_wireless.zip) somewhere  
 #5 ndiswrapper -i net5211.inf  

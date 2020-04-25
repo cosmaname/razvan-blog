@@ -13,5 +13,5 @@ tags: []
 permalink: "/2012/10/powershell-replace-text-in-files/"
 ---
 For want of a proper sed, the PS way:  
-Get-ChildItem -exclude \*bak | Where-Object {$\_.Attributes -ne "Directory"} | ForEach-Object { Copy-Item $\_ "$($\_).bak"; (Get-Content -Encoding UTF8 $\_) -replace "some text","other text" | Set-Content -Encoding UTF8 -path $\_ }
+Get-ChildItem -exclude *bak | Where-Object {$_.Attributes -ne "Directory"} | ForEach-Object { Copy-Item $_ "$($_).bak"; (Get-Content -Encoding UTF8 $_) -replace "some text","other text" | Set-Content -Encoding UTF8 -path $_ }
 

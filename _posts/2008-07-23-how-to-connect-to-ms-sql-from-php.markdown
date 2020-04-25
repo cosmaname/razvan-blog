@@ -32,6 +32,6 @@ Using the MSSQL Server extension on Win32 requires these steps:
 1) Install the SQL Server Client tools on the machine running PHP  
 ([you can get that for free from Microsoft](http://www.microsoft.com/downloads/details.aspx?FamilyID=d09c1d60-a13c-4479-9b91-9e8b9d835cdc&displaylang=en), the one you need is probably sqlncli.msi)  
 2) Configure a server alias using the client network utility. The alias specifies name, host name, protocol and port numbers used for the db communication  
-3) Connect to the database using the alias as db name as first parameter in mssql\_connect  
-4) If the SQL Server is configured for trusted connections only, enable this in PHP.INI by setting mssql.secure\_connection = On (no need for userid and password then)
+3) Connect to the database using the alias as db name as first parameter in mssql_connect  
+4) If the SQL Server is configured for trusted connections only, enable this in PHP.INI by setting mssql.secure_connection = On (no need for userid and password then)
 

@@ -13,8 +13,8 @@ tags: []
 permalink: "/2010/05/windows-7-updated-last-night-and-now-it-wont-boot/"
 ---
 Start with F8-\>disable restart on failure, if the bluscreen error is 0x7b then switch your hard drives to IDE mode in BIOS, then edit these two registry keys:  
-HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Services\Msahci  
-HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Services\IastorV  
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Msahci  
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\IastorV  
 "Start" must have a value of 0 (loaded by kernel), it is probably 3 (manual)  
 [More details here](http://support.microsoft.com/kb/922976)
 

@@ -18,11 +18,11 @@ permalink: "/2010/04/install-php-as-fastcgi-on-xp/"
 3. Download FastCGI from [http://www.iis.net/download/FastCGI](http://www.iis.net/download/FastCGI) (already included in Windows 7)  
 4. Add the .php file extension mapping using the IIS manager or  
 `C:\WINDOWS\system32\inetsrv>cscript fcgiconfig.js -add -section:"PHP" -extension:php -path:"C:\PHP5\php-cgi.exe"`  
-5. Download the VC9 non-thread safe FreeTDS dll from [http://download.moodle.org/download.php ... B\_NOTS.zip](http://download.moodle.org/download.php/dblib/php53/DBLIB_NOTS.zip) or (preferred - this one has parameterized queries) the v2 php\_sqlsrv\_53\_nts\_vc9.dll - search for the download link on [http://blogs.msdn.com/sqlphp](http://blogs.msdn.com/sqlphp) - it's in beta now.  
+5. Download the VC9 non-thread safe FreeTDS dll from [http://download.moodle.org/download.php ... B_NOTS.zip](http://download.moodle.org/download.php/dblib/php53/DBLIB_NOTS.zip) or (preferred - this one has parameterized queries) the v2 php_sqlsrv_53_nts_vc9.dll - search for the download link on [http://blogs.msdn.com/sqlphp](http://blogs.msdn.com/sqlphp) - it's in beta now.  
 6. In c:\php5\php.ini:  
-error\_log = c:\devel\php-errors.log  
+error_log = c:\devel\php-errors.log  
 fastcgi.impersonate = 1  
-extension=ext\php\_sqlsrv\_53\_nts\_vc9.dll  
+extension=ext\php_sqlsrv_53_nts_vc9.dll  
 7. Set the application protection level to Low (IIS Process)  
 8. in a file.php  
 `<?php
