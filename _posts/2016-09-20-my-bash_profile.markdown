@@ -1,7 +1,7 @@
 ---
 layout: post
 title: my .bash_profile
-date: 2016-09-20 19:44:58.000000000 +00:00
+date: 2022-11-21 14:44:58.000000000 +00:00
 type: post
 parent_id: '0'
 published: true
@@ -10,7 +10,7 @@ status: publish
 categories:
 - OS X
 tags: []
-permalink: "/2016/09/my-bash_profile/"
+permalink: "/2022/11/my-bash_profile/"
 ---
 ```
 shopt -s checkwinsize
@@ -21,9 +21,18 @@ HISTCONTROL=ignoreboth
 HISTTIMEFORMAT='%F %T '
 shopt -s cmdhist
 PROMPT_COMMAND='history -a'
-alias mc='caffeinate -i mc -d'
-export CLICOLOR=1
-export EDITOR='/usr/local/bin/joe'
-complete -C aws_completer aws
-eval "$(~/repos/rakudobrew/bin/rakudobrew init -)"
+export EDITOR='joe'
+alias mc='mc -d'
+alias checkip='curl --silent -4 https://checkip.amazonaws.com'
+export AWS_DEFAULT_REGION=eu-west-2
+export AWS_PROFILE=ephemeral
+export KUBE_CONFIG_PATH=${HOME}/.kube/config
+kubernodes () { kubectl get nodes -ojson | jq -r '.items[] | "\( .metadata.labels["kubernetes.io/hostname"] + " " + (.spec.providerID | split("/")[4]) )"' ; } ; export -f kubernodes
+alias dbuild='docker buildx build --platform=linux/amd64'
+alias drun='docker run --platform=linux/amd64'
+alias dpull='docker pull --platform=linux/amd64'
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH="$(go env GOPATH)${PATH+:$PATH}"
+
 ```
