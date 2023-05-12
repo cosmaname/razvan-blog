@@ -13,7 +13,7 @@ tags: []
 permalink: "/2015/04/reconf-service-using-only-cmd/"
 ---
 Fixing Zabbix on a bunch of Windows machines with local accounts  
-`
+```
 for /F "tokens=1-3 delims=," %%A in (zz.list) do (
  echo %%A %%B %%C
  net use "\\%%A.mydomain.com\C$" %%C /user:%%A\%%B
@@ -24,6 +24,5 @@ for /F "tokens=1-3 delims=," %%A in (zz.list) do (
  sc \\%%A.mydomain.com start "Zabbix Agent"
  net use "\\%%A.mydomain.com\IPC$" /delete
 )
-`  
+```
 and `HostnameItem=system.hostname[host]` in conf
-
