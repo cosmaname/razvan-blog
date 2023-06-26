@@ -1,7 +1,7 @@
 ---
 layout: post
 title: my .bash_profile
-date: 2023-06-26 12:44:58.000000000 +00:00
+date: 2023-06-26 12:00:00.000000000 +00:00
 type: post
 parent_id: '0'
 published: true
